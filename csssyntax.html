@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Syntax</title>
+    <style>
+       body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <h1>CSS Syntax</h1>
+    <p>A CSS rule consists of a selector and a declaration block.</p>
+
+    <p><strong>CSS Syntax</strong></p>
+    <ul>
+        The selector points to the HTML element you want to style.<br>
+        The declaration block contains one or more declarations separated by semicolons.<br>
+        Each declaration includes a CSS property name and a value, separated by a colon.<br>
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+    </ul>
+    <h1>Example Explained</h1>
+    <ul>
+        <li><strong>p</strong> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+        <li><strong>color</strong> is a property, and <strong>red</strong> is the property value.</li>
+        <li><strong>text-align</strong> is a property, and <strong>center</strong> is the property value.</li>
+    </ul>
+    
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming home.html is the previous page)
+            window.location.href = 'introduction.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page
+            window.location.href = 'introduction.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>

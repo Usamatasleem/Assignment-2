@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Introduction</title>
+    <style>
+       body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <h1>CSS Introduction</h1>
+    <p>CSS is the language we use to style a Web page.</p>
+
+    <p><strong>What is CSS?</strong></p>
+    <ul>
+        CSS stands for Cascading Style Sheets.<br>
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media.<br>
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once.<br>
+        External stylesheets are stored in CSS files.
+    </ul>
+    
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming home.html is the previous page)
+            window.location.href = 'home.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page
+            window.location.href = 'introduction.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>
