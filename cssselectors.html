@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        /* Part 1 */
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        /* Part 2 */
+        #para1 {
+            text-align: center;
+            color: red;
+        }
+
+        /* Part 3 */
+        .center {
+            text-align: center;
+            color: red;
+        }
+
+        /* Part 4 */
+        p.center {
+            text-align: center;
+            color: red;
+        }
+
+        /* Part 5 */
+        .large {
+            font-size: 24px;
+        }
+
+        /* Part 6 */
+        * {
+            text-align: center;
+            color: blue;
+        }
+
+        /* Part 7 */
+        h1,
+        h2,
+        p {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors</h1>
+    <p>A CSS selector selects the HTML element(s) you want to style.</p>
+
+    <p><strong>CSS Selectors</strong></p>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <p>We can divide CSS selectors into five categories:</p>
+    <ul>
+        <li><strong>Simple selectors</strong> (select elements based on name, id, class)</li>
+        <li><strong>Combinator selectors</strong> (select elements based on a specific relationship between them)</li>
+        <li><strong>Pseudo-class selectors</strong> (select elements based on a certain state)</li>
+        <li><strong>Pseudo-elements selectors</strong> (select and style a part of an element)</li>
+        <li><strong>Attribute selectors</strong> (select elements based on an attribute or attribute value)</li>
+    </ul>
+
+    <!-- Part 5 -->
+    <p class="center large">This paragraph refers to two classes.</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming home.html is the previous page)
+            window.location.href = 'csssyntax.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page
+            window.location.href = 'howto.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>

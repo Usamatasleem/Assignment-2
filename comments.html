@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Comments</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        /* This is a single-line comment */
+        p.part1 {
+            color: red;
+        }
+
+        /* Set text color to red */
+        p.part2 {
+            color: red;
+        }
+
+        p.part3 {
+            color: /*red*/blue; 
+        }
+
+        /* This is a
+        multi-line
+        comment */
+        p.part4 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Comments</h1>
+    <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+
+    <p><strong>CSS Comments</strong></p>
+    <ul>
+        Comments are used to explain the code, and may help when you edit the source code at a later date.<br>
+        Comments are ignored by browsers.<br>
+    </ul>
+
+    <!-- Part 1 -->
+    <p class="part1">This is a single-line comment</p>
+
+    <!-- Part 2 -->
+    <p class="part2">Set text color to red</p>
+
+    <!-- Part 3 -->
+    <p class="part3">Color is set to blue using comments</p>
+
+    <!-- Part 4 -->
+    <p class="part4">This is a multi-line comment</p>
+
+    <!-- Part 5 -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    p.part5 {
+        color: red; /* Set text color to red */
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2>My Heading</h2>
+
+    <!-- These paragraphs will be red -->
+    <p class="part5">Hello World!</p>
+    <p class="part5">This paragraph is styled with CSS.</p>
+    <p class="part5">CSS comments are not shown in the output.</p>
+
+    </body>
+    </html>
+    
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming home.html is the previous page)
+            window.location.href = 'howto.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page
+            window.location.href = 'colours.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>

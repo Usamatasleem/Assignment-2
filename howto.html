@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How To Add CSS</title>
+</head>
+<body>
+
+    <h1>How To Add CSS</h1>
+    <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+
+    <p><strong>Three Ways to Insert CSS</strong></p>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ul>
+        <li><strong>External CSS</strong></li>
+        <li><strong>Internal CSS</strong></li>
+        <li><strong>Inline CSS</strong></li>
+    </ul>
+
+    <!-- Part 1 -->
+    <h2>External CSS Example</h2>
+    <pre>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <link rel="stylesheet" href="mystyle.css">
+        </head>
+        <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+    </pre>
+
+    <!-- Part 2 -->
+    <h2>Internal CSS Example</h2>
+    <pre>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        body {
+            background-color: linen;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+        </style>
+        </head>
+        <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+    </pre>
+
+    <!-- Part 3 -->
+    <h2>Inline CSS Example</h2>
+    <pre>
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <p style="color:red;">This is a paragraph.</p>
+
+        </body>
+        </html>
+    </pre>
+
+    <!-- Part 4 -->
+    <h2>CSS Specificity Example</h2>
+    <pre>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        h1 {
+            color: navy;
+        }
+
+        h1 {
+            color: orange;   
+        }
+
+        </style>
+        </head>
+        <body>
+
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </pre>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming home.html is the previous page)
+            window.location.href = 'cssselectors.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page
+            window.location.href = 'comments.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>

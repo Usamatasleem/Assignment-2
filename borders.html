@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Examples</title>
+    <style>
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+
+        /* Part 2 */
+        p.one { border-style: solid; border-width: 5px; }
+        p.two { border-style: solid; border-width: medium; }
+        p.three { border-style: dotted; border-width: 2px; }
+        p.four { border-style: dotted; border-width: thick; }
+        p.five { border-style: double; border-width: 15px; }
+        p.six { border-style: double; border-width: thick; }
+
+        /* Part 3 */
+        p.one { border-style: solid; border-width: 5px 20px; }
+        p.two { border-style: solid; border-width: 20px 5px; }
+        p.three { border-style: solid; border-width: 25px 10px 4px 35px; }
+
+        /* Part 4 */
+        p.one { border-style: solid; border-color: red; }
+        p.two { border-style: solid; border-color: green; }
+        p.three { border-style: dotted; border-color: blue; }
+
+        /* Part 5 */
+        p.one { border-style: solid; border-color: red green blue yellow; }
+
+        /* Part 6 */
+        p.one { border-style: solid; border-color: #ff0000; }
+        p.two { border-style: solid; border-color: #0000ff; }
+        p.three { border-style: solid; border-color: #bbbbbb; }
+
+        /* Part 7 */
+        p.one { border-style: solid; border-color: hsl(0, 100%, 50%); }
+        p.two { border-style: solid; border-color: hsl(240, 100%, 50%); }
+        p.three { border-style: solid; border-color: hsl(0, 0%, 73%); }
+
+        /* Part 8 */
+        p.one { border-style: solid; border-color: rgb(255, 0, 0); }
+        p.two { border-style: solid; border-color: rgb(0, 0, 255); }
+        p.three { border-style: solid; border-color: rgb(187, 187, 187); }
+
+        /* Part 9 */
+        p { border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid; }
+
+        /* Part 10 */
+        p { border-style: dotted solid; }
+
+        /* Part 11 */
+        body { text-align: center; }
+        p.four { border-style: dotted solid double dashed; }
+        p.three { border-style: dotted solid double; }
+        p.two { border-style: dotted solid; }
+        p.one { border-style: dotted; }
+
+        /* Part 12 */
+        p { border: 5px solid red; }
+
+        /* Part 13 */
+        p { border-left: 6px solid red; background-color: lightgrey; }
+
+        /* Part 14 */
+        p { border-bottom: 6px solid red; background-color: lightgrey; }
+
+        /* Part 15 */
+        p.normal { border: 2px solid red; padding: 5px; }
+        p.round1 { border: 2px solid red; border-radius: 5px; padding: 5px; }
+        p.round2 { border: 2px solid red; border-radius: 8px; padding: 5px; }
+        p.round3 { border: 2px solid red; border-radius: 12px; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>Border Examples</h2>
+
+    <!-- Part 1 -->
+    <h3>Part 1 - The border-style Property</h3>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <!-- Part 2 -->
+    <h3>Part 2 - The border-width Property</h3>
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+    Always specify the "border-style" property to set the borders first.</p>
+
+    <!-- Part 3 -->
+    <h3>Part 3 - The border-width Property (with multiple values)</h3>
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+
+    <!-- Part 4 -->
+    <h3>Part 4 - The border-color Property</h3>
+    <p class="one">A solid red border</p>
+    <p class="two">A solid green border</p>
+    <p class="three">A dotted blue border</p>
+
+    <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+    <!-- Part 5 -->
+    <h3>Part 5 - The border-color Property (multiple values)</h3>
+    <p class="one">A solid multicolor border</p>
+
+    <!-- Part 6 -->
+    <h3>Part 6 - The border-color Property (hexadecimal values)</h3>
+    <p class="one">A solid red border</p>
+    <p class="two">A solid blue border</p>
+    <p class="three">A solid grey border</p>
+
+    <!-- Part 7 -->
+    <h3>Part 7 - The border-color Property (HSL values)</h3>
+    <p class="one">A solid red border</p>
+    <p class="two">A solid blue border</p>
+    <p class="three">A solid grey border</p>
+
+    <!-- Part 8 -->
+    <h3>Part 8 - The border-color Property (RGB values)</h3>
+    <p class="one">A solid red border</p>
+    <p class="two">A solid blue border</p>
+    <p class="three">A solid grey border</p>
+
+    <!-- Part 9 -->
+    <h3>Part 9 - Individual Border Sides</h3>
+    <p>2 different border styles.</p>
+
+    <!-- Part 10 -->
+    <h3>Part 10 - Individual Border Sides</h3>
+    <p>2 different border styles.</p>
+
+    <!-- Part 11 -->
+    <h3>Part 11 - Individual Border Sides</h3>
+    <p class="four">4 different border styles.</p>
+    <p class="three">3 different border styles.</p>
+    <p class="two">2 different border styles.</p>
+    <p class="one">1 border style.</p>
+
+    <!-- Part 12 -->
+    <h3>Part 12 - The border Property</h3>
+    <p>This property is a shorthand property for border-width, border-style, and border-color.</p>
+
+    <!-- Part 13 -->
+    <h3>Part 13 - The border-left Property</h3>
+    <p>This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p>
+
+    <!-- Part 14 -->
+    <h3>Part 14 - The border-bottom Property</h3>
+    <p>This property is a shorthand property for border-bottom-width, border-bottom-style, and border-bottom-color.</p>
+
+    <!-- Part 15 -->
+    <h3>Part 15 - The border-radius Property</h3>
+    <p>This property is used to add rounded borders to an element:</p>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming the previous page is specified)
+            window.location.href = 'backgrounds.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page (assuming the next page is specified)
+            window.location.href = 'margins.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>

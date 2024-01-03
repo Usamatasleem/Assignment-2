@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Background Examples</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            background-color: green;
+        }
+
+        div {
+            background-color: lightblue;
+        }
+
+        p {
+            background-color: yellow;
+        }
+
+        div.part3 {
+            background-color: green;
+            opacity: 0.3;
+        }
+
+        div.part4 {
+            background: rgba(0, 128, 0, 0.3);
+        }
+
+        body.part5 {
+            background-image: url("paper.gif");
+        }
+
+        body.part6 {
+            background-image: url("bgdesert.jpg");
+        }
+
+        p.part7 {
+            background-image: url("paper.gif");
+        }
+
+        body.part8 {
+            background-image: url("gradient_bg.png");
+        }
+
+        body.part9 {
+            background-image: url("gradient_bg.png");
+            background-repeat: repeat-x;
+        }
+
+        body.part10 {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+        }
+
+        body.part11 {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        body.part12 {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+
+        body.part13 {
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: scroll;
+        }
+
+        body.part14 {
+            background-color: #ffffff;
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        body.part15 {
+            background: #ffffff url("img_tree.png") no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Background Examples</h1>
+    <p>Explore different background styles with CSS.</p>
+
+    <div class="part3">
+        <h2>Part 3</h2>
+        <p>This div has a green background with 30% opacity.</p>
+    </div>
+
+    <div class="part4">
+        <h2>Part 4</h2>
+        <p>This div has a green background with 30% opacity using rgba.</p>
+    </div>
+
+    <div class="part5">
+        <h2>Part 5</h2>
+        <p>This body has a background image from paper.gif.</p>
+    </div>
+
+    <div class="part6">
+        <h2>Part 6</h2>
+        <p>This body has a background image from bgdesert.jpg.</p>
+    </div>
+
+    <p class="part7">
+        <h2>Part 7</h2>
+        <p>This paragraph has a background image from paper.gif.</p>
+    </p>
+
+    <div class="part8">
+        <h2>Part 8</h2>
+        <p>This body has a background image from gradient_bg.png.</p>
+    </div>
+
+    <div class="part9">
+        <h2>Part 9</h2>
+        <p>This body has a repeated background image from gradient_bg.png.</p>
+    </div>
+
+    <div class="part10">
+        <h2>Part 10</h2>
+        <p>This body has a background image from img_tree.png without repeat.</p>
+    </div>
+
+    <div class="part11">
+        <h2>Part 11</h2>
+        <p>This body has a background image from img_tree.png positioned at the right top.</p>
+    </div>
+
+    <div class="part12">
+        <h2>Part 12</h2>
+        <p>This body has a fixed background image from img_tree.png positioned at the right top.</p>
+    </div>
+
+    <div class="part13">
+        <h2>Part 13</h2>
+        <p>This body has a scrollable background image from img_tree.png positioned at the right top.</p>
+    </div>
+
+    <div class="part14">
+        <h2>Part 14</h2>
+        <p>This body has a white background color and a background image from img_tree.png positioned at the right top.</p>
+    </div>
+
+    <div class="part15">
+        <h2>Part 15</h2>
+        <p>This body has a background color of #ffffff and a background image from img_tree.png positioned at the right top.</p>
+    </div>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming the previous page is specified)
+            window.location.href = 'colours.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page (assuming the next page is specified)
+            window.location.href = 'borders.html';  // Change this URL to your next page's URL
+        }
+    </script>
+
+</body>
+</html>
