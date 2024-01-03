@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Snippet 1 styles */
+        h1.snippet1 {
+            text-decoration: overline;
+        }
+
+        h2.snippet1 {
+            text-decoration: line-through;
+        }
+
+        h3.snippet1 {
+            text-decoration: underline;
+        }
+
+        p.snippet1 {
+            text-decoration: overline underline;
+        }
+
+        /* Snippet 2 styles */
+        h1.snippet2 {
+            text-decoration-line: overline;
+            text-decoration-color: red;
+        }
+
+        h2.snippet2 {
+            text-decoration-line: line-through;
+            text-decoration-color: blue;
+        }
+
+        h3.snippet2 {
+            text-decoration-line: underline;
+            text-decoration-color: green;
+        }
+
+        p.snippet2 {
+            text-decoration-line: overline underline;
+            text-decoration-color: purple;
+        }
+
+        /* Snippet 3 styles */
+        h1.snippet3 {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+
+        h2.snippet3 {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+
+        h3.snippet3 {
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+
+        p.snippet3.ex1 {
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+
+        p.snippet3.ex2 {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+        p.snippet3.ex3 {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+        }
+
+        /* Snippet 4 styles */
+        h1.snippet4 {
+            text-decoration-line: underline;
+            text-decoration-thickness: auto;
+        }
+
+        h2.snippet4 {
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+        }
+
+        h3.snippet4 {
+            text-decoration-line: underline;
+            text-decoration-thickness: 25%;
+        }
+
+        p.snippet4 {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 5px;
+        }
+
+        /* Snippet 5 styles */
+        h1.snippet5 {
+            text-decoration: underline;
+        }
+
+        h2.snippet5 {
+            text-decoration: underline red;
+        }
+
+        h3.snippet5 {
+            text-decoration: underline red double;
+        }
+
+        p.snippet5 {
+            text-decoration: underline red double 5px;
+        }
+
+        /* Snippet 6 styles */
+        a.snippet6 {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="snippet1">Overline text decoration</h1>
+    <h2 class="snippet1">Line-through text decoration</h2>
+    <h3 class="snippet1">Underline text decoration</h3>
+    <p class="snippet1">Overline and underline text decoration.</p>
+
+    <p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses the
+        reader.</p>
+
+    <h1 class="snippet2">Overline text decoration</h1>
+    <h2 class="snippet2">Line-through text decoration</h2>
+    <h3 class="snippet2">Underline text decoration</h3>
+    <p class="snippet2">Overline and underline text decoration.</p>
+
+    <h1 class="snippet3">Heading 1</h1>
+    <h2 class="snippet3">Heading 2</h2>
+    <h3 class="snippet3">Heading 3</h3>
+    <p class="snippet3 ex1">A paragraph.</p>
+    <p class="snippet3 ex2">Another paragraph.</p>
+    <p class="snippet3 ex3">Another paragraph.</p>
+
+    <h1 class="snippet4">Heading 1</h1>
+    <h2 class="snippet4">Heading 2</h2>
+    <h3 class="snippet4">Heading 3</h3>
+    <p class="snippet4">A paragraph.</p>
+
+    <h1 class="snippet5">Heading 1</h1>
+    <h2 class="snippet5">Heading 2</h2>
+    <h3 class="snippet5">Heading 3</h3>
+    <p class="snippet5">A paragraph.</p>
+
+    <h1 class="snippet6">Using text-decoration: none</h1>
+    <p class="snippet6">A link with no underline: <a class="snippet6" href="https://www.w3schools.com">W3Schools.com</a>
+    </p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'alignment.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'texttransformation.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>

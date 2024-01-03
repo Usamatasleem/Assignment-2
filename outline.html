@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 */
+        p.part1 {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Part 2 */
+        p.part2 {
+            outline-color: red;
+        }
+
+        p.dotted {
+            outline-style: dotted;
+        }
+
+        p.dashed {
+            outline-style: dashed;
+        }
+
+        p.solid {
+            outline-style: solid;
+        }
+
+        p.double {
+            outline-style: double;
+        }
+
+        p.groove {
+            outline-style: groove;
+        }
+
+        p.ridge {
+            outline-style: ridge;
+        }
+
+        p.inset {
+            outline-style: inset;
+        }
+
+        p.outset {
+            outline-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Outline</h2>
+
+    <!-- Part 1 -->
+    <p class="part1">This element has a 2px black border and a green outline with a width of 10px.</p>
+
+    <h2>The outline-style Property</h2>
+
+    <!-- Part 2 -->
+    <p class="part2 dotted">A dotted outline</p>
+    <p class="part2 dashed">A dashed outline</p>
+    <p class="part2 solid">A solid outline</p>
+    <p class="part2 double">A double outline</p>
+    <p class="part2 groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="part2 ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="part2 inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="part2 outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'boxmodel.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'outlinewidth.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>

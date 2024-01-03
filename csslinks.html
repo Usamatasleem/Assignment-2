@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        a.part1 {
+            color: hotpink;
+        }
+
+        /* Part 2 styles */
+        /* unvisited link */
+        a.part2:link {
+            color: red;
+        }
+
+        /* visited link */
+        a.part2:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a.part2:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a.part2:active {
+            color: blue;
+        }
+
+        /* Part 3 styles */
+        a.part3:link,
+        a.part3:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a.part3:hover,
+        a.part3:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <h2>Style a link with a color</h2>
+    <p><b><a class="part1" href="https://www.dawn.com/" target="_blank">This is a link</a></b></p>
+
+    <!-- Part 2 -->
+    <h2>Styling a link depending on state</h2>
+    <p><b><a class="part2" href="https://www.dawn.com/" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <!-- Part 3 -->
+    <h2>Link Button</h2>
+    <p>A link styled as a button:</p>
+    <a class="part3" href="https://www.dawn.com/" target="_blank">This is a link</a>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'cssfonts.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'csslist.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

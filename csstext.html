@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        div.part1 {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        h1.part1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4CAF50;
+        }
+
+        p.part1 {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+
+        a.part1 {
+            text-decoration: none;
+            color: #008CBA;
+        }
+
+        /* Part 2 styles */
+        body.part2 {
+            color: blue;
+        }
+
+        h1.part2 {
+            color: green;
+        }
+
+        /* Part 3 styles */
+        body.part3 {
+            background-color: lightgrey;
+            color: blue;
+        }
+
+        h1.part3 {
+            background-color: black;
+            color: white;
+        }
+
+        div.part3 {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="part1">
+        <h1 class="part1">text formatting</h1>
+        <p class="part1">This text is styled with some of the text formatting properties. The heading uses the text-align,
+            text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is
+            specified. The underline is removed from this colored <a class="part1" target="_blank"
+                href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+    </div>
+
+    <h1 class="part2">This is heading 1</h1>
+    <p class="part2">This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is
+        defined in the body selector.</p>
+    <p class="part2">Another paragraph.</p>
+
+    <h1 class="part3">This is a Heading</h1>
+    <p class="part3">This page has a grey background color and a blue text.</p>
+    <div class="part3">This is a div.</div>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'offset.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'alignment.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

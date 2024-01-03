@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Snippet 1 styles */
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        /* Snippet 2 styles */
+        p.indent {
+            text-indent: 50px;
+        }
+
+        /* Snippet 3 styles */
+        h2.spacing {
+            letter-spacing: 5px;
+        }
+
+        h3.spacing {
+            letter-spacing: -2px;
+        }
+
+        /* Snippet 4 styles */
+        p.small {
+            line-height: 0.7;
+        }
+
+        p.big {
+            line-height: 1.8;
+        }
+
+        /* Snippet 5 styles */
+        p.one {
+            word-spacing: 10px;
+        }
+
+        p.two {
+            word-spacing: -2px;
+        }
+
+        /* Snippet 6 styles */
+        p.no-wrap {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using the text-transform property</h1>
+
+    <p class="uppercase">This text is transformed to uppercase.</p>
+    <p class="lowercase">This text is transformed to lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+
+    <h1>Using text-indent</h1>
+
+    <p class="indent">In my younger and more vulnerable years my father gave me some advice that I've been turning over
+        in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the
+        people in this world haven't had the advantages that you've had.'</p>
+
+    <h1>Using letter-spacing</h1>
+
+    <h2 class="spacing">This is heading 1</h2>
+    <h3 class="spacing">This is heading 2</h3>
+
+    <h1>Using line-height</h1>
+
+    <p>
+        This is a paragraph with a standard line-height.<br>
+        The default line height in most browsers is about 110% to 120%.<br>
+    </p>
+
+    <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+    </p>
+
+    <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+    </p>
+
+    <h1>Using word-spacing</h1>
+
+    <p>This is a paragraph with normal word spacing.</p>
+
+    <p class="one">This is a paragraph with larger word spacing.</p>
+
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+
+    <h1>Using white-space</h1>
+
+    <p class="no-wrap">
+        This is some text that will not wrap. This is some text that will not wrap. This is some text that will not
+        wrap. This is some text that will not wrap. This is some text that will not wrap. This is some text that will
+        not wrap. This is some text that will not wrap. This is some text that will not wrap. This is some text that
+        will not wrap.
+    </p>
+
+    <p>Try to remove the white-space property to see the difference!</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'textdecoration.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'textshadow.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

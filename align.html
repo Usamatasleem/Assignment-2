@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center-div {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.center-text {
+  text-align: center;
+  border: 3px solid green;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+<div class="center-div">
+  <p>Hello World!</p>
+</div>
+
+<h2>Center Text</h2>
+<div class="center-text">
+  <p>This text is centered.</p>
+</div>
+
+<h2>Center an Image</h2>
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img src="paris.jpg" alt="Paris" style="width:40%" class="center-image">
+
+
+<button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'inlineblock.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'combinators.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+</html>

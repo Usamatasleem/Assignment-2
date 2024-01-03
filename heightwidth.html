@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 */
+        #part1 div {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #4CAF50;
+        }
+
+        /* Part 2 */
+        #part2 div {
+            height: 200px;
+            width: 50%;
+            background-color: powderblue;
+        }
+
+        /* Part 3 */
+        #part3 div {
+            height: 100px;
+            width: 500px;
+            background-color: powderblue;
+        }
+
+        /* Part 4 */
+        #part4 div {
+            max-width: 500px;
+            height: 100px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Height and Width Examples</h2>
+
+    <!-- Part 1 -->
+    <div id="part1">
+        <h3>Part 1: CSS height and width properties</h3>
+        <div>This div element has a height of 50 pixels and a width of 100%.</div>
+    </div>
+
+    <!-- Part 2 -->
+    <div id="part2">
+        <h3>Part 2: Set the height and width of an element</h3>
+        <div>This div element has a height of 200px and a width of 50%.</div>
+    </div>
+
+    <!-- Part 3 -->
+    <div id="part3">
+        <h3>Part 3: Set the height and width of an element</h3>
+        <div>This div element has a height of 100px and a width of 500px.</div>
+    </div>
+
+    <!-- Part 4 -->
+    <div id="part4">
+        <h3>Part 4: Set the max-width of an element</h3>
+        <div>This div element has a height of 100px and a max-width of 500px.</div>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'padding.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'boxmodel.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

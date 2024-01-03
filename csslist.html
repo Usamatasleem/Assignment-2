@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        ul.part1a {
+            list-style-type: circle;
+        }
+
+        ul.part1b {
+            list-style-type: square;
+        }
+
+        ol.part1c {
+            list-style-type: upper-roman;
+        }
+
+        ol.part1d {
+            list-style-type: lower-alpha;
+        }
+
+        /* Part 2 styles */
+        ul.part2a {
+            list-style-position: outside;
+        }
+
+        ul.part2b {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <h2>The list-style-type Property</h2>
+
+    <p>Example of unordered lists:</p>
+    <ul class="part1a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="part1b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="part1c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="part1d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <!-- Part 2 -->
+    <h1>The list-style-position Property</h1>
+
+    <h2>list-style-position: outside (default):</h2>
+    <ul class="part2a">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+
+    <h2>list-style-position: inside:</h2>
+    <ul class="part2b">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'csslinks.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'csstables.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

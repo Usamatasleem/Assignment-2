@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        li {
+            display: inline;
+        }
+
+        /* Part 2 styles */
+        span {
+            display: block;
+        }
+
+        /* Part 3 styles */
+        h1.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <p>Display a list of links as a horizontal menu:</p>
+    <ul>
+        <li><a href="https://www.dawn.com/" target="_blank">DAWN newspapers</a></li>
+        <li><a href="https://twitter.com/ImranKhanPTI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+    </ul>
+
+    <!-- Part 2 -->
+    <h1>Display span elements as block elements</h1>
+    <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+
+    <!-- Part 3 -->
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'csstables.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'widthmaxwidth.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+
+</body>
+
+</html>

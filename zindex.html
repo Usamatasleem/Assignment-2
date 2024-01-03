@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        .container {
+            position: relative;
+        }
+
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .gray-box {
+            position: absolute;
+            z-index: 3; /* gray box will be above both green and black box */
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green-box {
+            position: absolute;
+            z-index: 2; /* green box will be above black box */
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+
+        /* Part 2 styles */
+        .black-box {
+            position: relative;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .gray-box {
+            position: absolute;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green-box {
+            position: absolute;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <h1>Z-index Example</h1>
+    <p>An element with greater stack order is always above an element with a lower stack order.</p>
+    <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+
+    <!-- Part 2 -->
+    <h1>Overlapping elements</h1>
+    <p>If two positioned elements overlap each other without a z-index specified,
+        the element defined last in the HTML code will be shown on top:</p>
+    <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+    </div>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'position.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'overflow.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Snippet 1 styles */
+        h1.snippet1 {
+            text-align: center;
+        }
+
+        h2.snippet1 {
+            text-align: left;
+        }
+
+        h3.snippet1 {
+            text-align: right;
+        }
+
+        /* Snippet 2 styles */
+        div.snippet2 {
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+        }
+
+        /* Snippet 3 styles */
+        p.snippet3 {
+            text-align-last: right;
+        }
+
+        p.snippet3.center {
+            text-align-last: center;
+        }
+
+        p.snippet3.justify {
+            text-align-last: justify;
+        }
+
+        /* Snippet 4 styles */
+        p.snippet4 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        /* Snippet 5 styles */
+        img.snippet5 {
+            vertical-align: baseline;
+        }
+
+        img.snippet5.text-top {
+            vertical-align: text-top;
+        }
+
+        img.snippet5.text-bottom {
+            vertical-align: text-bottom;
+        }
+
+        img.snippet5.sub {
+            vertical-align: sub;
+        }
+
+        img.snippet5.super {
+            vertical-align: super;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="snippet1">Heading 1 (center)</h1>
+    <h2 class="snippet1">Heading 2 (left)</h2>
+    <h3 class="snippet1">Heading 3 (right)</h3>
+
+    <p class="snippet1">The three headings above are aligned center, left and right.</p>
+
+    <h1>Example text-align: justify</h1>
+    <p>The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and
+        magazines).</p>
+    <div class="snippet2">
+        In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+        ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in
+        this world haven't had the advantages that you've had.'
+    </div>
+
+    <h1>The text-align-last Property</h1>
+    <h2 class="snippet3">text-align-last: right:</h2>
+    <p class="snippet3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+        pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+    <h2 class="snippet3 center">text-align-last: center:</h2>
+    <p class="snippet3 center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar,
+        at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+    <h2 class="snippet3 justify">text-align-last: justify:</h2>
+    <p class="snippet3 justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar,
+        at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+    <p class="snippet4">This is the default text direction.</p>
+    <p class="snippet4">This is right-to-left text direction.</p>
+
+    <h1>The vertical-align Property</h1>
+    <h2 class="snippet5">vertical-align: baseline (default):</h2>
+    <p class="snippet5">An <img class="snippet5" src="sqpurple.gif" width="9" height="9"> image with a default
+        alignment.</p>
+    <h2 class="snippet5 text-top">vertical-align: text-top:</h2>
+    <p class="snippet5 text-top">An <img class="snippet5 text-top" src="sqpurple.gif" width="9" height="9"> image with a
+        text-top alignment.</p>
+    <h2 class="snippet5 text-bottom">vertical-align: text-bottom:</h2>
+    <p class="snippet5 text-bottom">An <img class="snippet5 text-bottom" src="sqpurple.gif" width="9" height="9"> image
+        with a text-bottom alignment.</p>
+    <h2 class="snippet5 sub">vertical-align: sub:</h2>
+    <p class="snippet5 sub">An <img class="snippet5 sub" src="sqpurple.gif" width="9" height="9"> image with a sub
+        alignment.</p>
+    <h2 class="snippet5 super">vertical-align: sup:</h2>
+    <p class="snippet5 super">An <img class="snippet5 super" src="sqpurple.gif" width="9" height="9"> image with a super
+        alignment.</p>
+
+        <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'csstext.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'textdecoration.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+div {
+  background-color: coral;
+  width: 200px;
+  border: 1px solid black;
+}
+
+div.visible {
+  height: 65px;
+  overflow: visible;
+}
+
+div.hidden {
+  height: 65px;
+  overflow: hidden;
+}
+
+div.scroll {
+  height: 100px;
+  overflow: scroll;
+}
+
+div.auto {
+  height: 65px;
+  overflow: auto;
+}
+
+div.xy {
+  height: 65px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Overflow Examples</h2>
+
+<div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+
+<h2>Overflow: visible</h2>
+<div class="visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow: hidden</h2>
+<div class="hidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow: scroll</h2>
+<div class="scroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow: auto</h2>
+<div class="auto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow-x and overflow-y</h2>
+<div class="xy">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'zindex.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'cssfloat.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+</style>
+</head>
+<body>
+
+<h2>The outline Property</h2>
+
+<p class="ex1">A dashed outline.</p>
+<p class="ex2">A dotted red outline.</p>
+<p class="ex3">A 5px solid yellow outline.</p>
+<p class="ex4">A thick ridge pink outline.</p>
+
+<button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'outlinecolour.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'offset.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+</html>
+
+

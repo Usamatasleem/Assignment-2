@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Snippet 1 styles */
+        p.ex1 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: red;
+        }
+
+        p.ex2 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: blue;
+        }
+
+        p.ex3 {
+            border: 2px solid black;
+            outline-style: outset;
+            outline-color: grey;
+        }
+
+        /* Snippet 2 styles */
+        p.ex4 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: #ff0000; /* red */
+        }
+
+        p.ex5 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: #0000ff; /* blue */
+        }
+
+        p.ex6 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: #bbbbbb; /* grey */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The outline-color Property</h2>
+    <p>The outline-color property is used to set the color of the outline.</p>
+
+    <p class="ex1">A solid red outline.</p>
+    <p class="ex2">A dotted blue outline.</p>
+    <p class="ex3">An outset grey outline.</p>
+
+    <h2>The outline-color Property with HEX Values</h2>
+    <p>The color of the outline can also be specified using a hexadecimal value (HEX):</p>
+
+    <p class="ex4">A solid red outline.</p>
+    <p class="ex5">A dotted blue outline.</p>
+    <p class="ex6">A solid grey outline.</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'outlinewidth.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'outlineshorthand.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>

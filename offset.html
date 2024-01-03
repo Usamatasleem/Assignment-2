@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Snippet 1 styles */
+        p.ex1 {
+            margin: 30px;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+
+        /* Snippet 2 styles */
+        p.ex2 {
+            margin: 30px;
+            background: yellow;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The outline-offset Property</h2>
+
+    <p class="ex1">This paragraph has an outline 15px outside the border edge.</p>
+
+    <h2>The outline-offset Property with Background</h2>
+
+    <p class="ex2">This paragraph has an outline of 15px outside the border edge and a yellow background.</p>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'outlineshorthand.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'csstext.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+
+</body>
+
+</html>

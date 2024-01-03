@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}  
+
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+<button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'pseudoclasses.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'opacity.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+</html>

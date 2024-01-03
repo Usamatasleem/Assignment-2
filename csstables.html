@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Part 1 styles */
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Part 2 styles */
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 70px;
+        }
+
+        /* Part 3 styles */
+        td {
+            text-align: center;
+        }
+
+        /* Part 4 styles */
+        table,
+        td,
+        th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        /* Part 5 styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Part 6 styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <h1>A Fancy Table</h1>
+    <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!-- ... (other table rows) ... -->
+    </table>
+
+    <!-- Part 2 -->
+    <h2>The width and height Properties</h2>
+    <p>Set the width of the table, and the height of the table header row:</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <!-- ... (other table rows) ... -->
+    </table>
+
+    <!-- Part 3 -->
+    <h2>The text-align Property</h2>
+    <p>This property sets the horizontal alignment (like left, right, or center) of the content in th or td.</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <!-- ... (other table rows) ... -->
+    </table>
+
+    <!-- Part 4 -->
+    <h2>The padding Property</h2>
+    <p>This property adds space between the border and the content in a table.</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <!-- ... (other table rows) ... -->
+    </table>
+
+    <!-- Part 5 -->
+    <h2>Bordered Table Dividers</h2>
+    <p>Add the border-bottom property to th and td for horizontal dividers:</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <!-- ... (other table rows) ... -->
+    </table>
+
+    <!-- Part 6 -->
+    <h2>Responsive Table</h2>
+    <p>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content.
+        Resize the browser window to see the effect:</p>
+    <p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table
+        element:</p>
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                <!-- ... (other table headers) ... -->
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <!-- ... (other table cells) ... -->
+            </tr>
+            <!-- ... (other table rows) ... -->
+        </table>
+    </div>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'csslist.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'cssdisplay.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+
+</html>
