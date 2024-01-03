@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Part 1 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Part 2 */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown2:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Part 3 */
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown3:hover .dropdown-content3 {
+  display: block;
+}
+
+.dropdown3:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<!-- Part 1 -->
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
+
+<!-- Part 2 -->
+<h2>Dropdown Menu</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown2">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content2">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<p><strong>Note:</strong> We use href="#" for test links. In a real web site, this would be URLs.</p>
+
+<!-- Part 3 -->
+<h2>Aligned Dropdown Content</h2>
+<p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+<div class="dropdown3" style="float:left;">
+  <button class="dropbtn">Left</button>
+  <div class="dropdown-content3" style="left:0;">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown3" style="float:right;">
+  <button class="dropbtn">Right</button>
+  <div class="dropdown-content3">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+  <script>
+      function navigateToPrevious() {
+          // Navigate to the previous page (assuming the previous page is specified)
+          window.location.href = 'responsivenavbar.html';  // Change this URL to your previous page's URL
+      }
+
+      function navigateToNext() {
+          // Navigate to the next page (assuming the next page is specified)
+          window.location.href = 'imagegallery.html';  // Change this URL to your next page's URL
+      }
+  </script>
+
+</body>
+</html>
