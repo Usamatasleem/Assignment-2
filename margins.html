@@ -67,11 +67,11 @@
         }
 
         /* Part 9 */
-        h1 {
+        h2.part9 {
             margin: 0 0 50px 0;
         }
 
-        h2 {
+        h2.part9 + h2 {
             margin: 20px 0 0 0;
         }
     </style>
@@ -136,10 +136,25 @@
     </div>
 
     <!-- Part 9 -->
-    <h2>Margin Collapse Example</h2>
+    <h2 class="part9">Margin Collapse Example</h2>
     <p>In this example, the h1 element has a bottom margin of 50px, and the h2 element has a top margin of 20px. Due to margin collapse, the actual margin between h1 and h2 is 50px.</p>
-    <h1>Heading 1</h1>
+    <h2>Heading 1</h2>
     <h2>Heading 2</h2>
+
+    <button onclick="navigateToPrevious()">Previous</button>
+    <button onclick="navigateToNext()">Next</button>
+
+    <script>
+        function navigateToPrevious() {
+            // Navigate to the previous page (assuming the previous page is specified)
+            window.location.href = 'borders.html';  // Change this URL to your previous page's URL
+        }
+
+        function navigateToNext() {
+            // Navigate to the next page (assuming the next page is specified)
+            window.location.href = 'padding.html';  // Change this URL to your next page's URL
+        }
+    </script>
 
 </body>
 
